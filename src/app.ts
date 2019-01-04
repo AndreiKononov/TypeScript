@@ -1,7 +1,9 @@
 import { Category } from "./enums";
-import { Book, Logger, Author, Librarian } from "./interfaces";
+import { Book, Logger, Author, Librarian, Magazine } from "./interfaces";
 import { UniversityLibrarian, ReferenceItem } from "./classes";
 import RefBook from './encyclopedia';
+import { purge } from './lib/utility-functions';
+import Shelf from './shelf';
 
 /*
 showHello('greeting', 'TypeScript');
@@ -578,6 +580,49 @@ const refBook = new RefBook('JS', 2012, 6);
 refBook.printItem();
 refBook.printCitation();
 */
+
+
+//Task 17
+//_________________________________________
+/*const inventory: Array<Book> = [
+  { id: 10, title: 'The C Programming Language', author: 'K & R', available: true, category: Category.Software },
+  { id: 11, title: 'Code Complete', author: 'Steve McConnell', available: true, category: Category.Software },
+  { id: 12, title: '8-Bit Graphics with Cobol', author: 'A. B.', available: true, category: Category.Software },
+  { id: 13, title: 'Cool autoexec.bat Scripts!', author: 'C. D.', available: true, category: Category.Software }
+];
+
+
+const result = purge<Book>(inventory);
+console.log(result);
+const result2 = purge([1, 2, 3, 4]);
+console.log(result2);*/
+
+
+//Task 18
+//_________________________________________
+const inventory: Array<Book> = [
+  { id: 10, title: 'The C Programming Language', author: 'K & R', available: true, category: Category.Software },
+  { id: 11, title: 'Code Complete', author: 'Steve McConnell', available: true, category: Category.Software },
+  { id: 12, title: '8-Bit Graphics with Cobol', author: 'A. B.', available: true, category: Category.Software },
+  { id: 13, title: 'Cool autoexec.bat Scripts!', author: 'C. D.', available: true, category: Category.Software }
+];
+
+const bookShelf: Shelf<Book> = new Shelf<Book>();
+inventory.forEach(book => bookShelf.add(book));
+const firstBook: Book = bookShelf.getFirst();
+console.log(firstBook);
+
+const magazines: Magazine[] = [
+  { title: 'Programming Language Monthly', publisher: 'Code Mags' },
+  { title: 'Literary Fiction Quarterly', publisher: 'College Press' },
+  { title: 'Five Points', publisher: 'GSU' }
+];
+
+const magazineShelf: Shelf<Magazine> = new Shelf<Magazine>();
+magazines.forEach(mag => magazineShelf.add(mag));
+const firstMag: Magazine = magazineShelf.getFirst();
+console.log(firstMag);
+
 
 // Dynamic Import Expressions
 //-----------------------------------
