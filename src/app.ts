@@ -600,7 +600,7 @@ console.log(result2);*/
 
 //Task 18
 //_________________________________________
-const inventory: Array<Book> = [
+/*const inventory: Array<Book> = [
   { id: 10, title: 'The C Programming Language', author: 'K & R', available: true, category: Category.Software },
   { id: 11, title: 'Code Complete', author: 'Steve McConnell', available: true, category: Category.Software },
   { id: 12, title: '8-Bit Graphics with Cobol', author: 'A. B.', available: true, category: Category.Software },
@@ -621,15 +621,57 @@ const magazines: Magazine[] = [
 const magazineShelf: Shelf<Magazine> = new Shelf<Magazine>();
 magazines.forEach(mag => magazineShelf.add(mag));
 const firstMag: Magazine = magazineShelf.getFirst();
-console.log(firstMag);
+console.log(firstMag);*/
 
+//Task 19
+//_________________________________________
+
+/*magazineShelf.printTitles();
+console.log(magazineShelf.find('Code Complete'));
+console.log(magazineShelf.find('Five Points'));*/
+
+// DECORATORS
+//Task 20.1
+//_________________________________________
+
+/*const favoriteLibrarian: Librarian = new UniversityLibrarian();
+
+favoriteLibrarian.name = 'Andrei';
+favoriteLibrarian.assistCustomer('ClaraBridge');*/
+
+
+//Task 20.2
+//_________________________________________
+
+/*const favoriteLibrarian: Librarian = new UniversityLibrarian();
+
+favoriteLibrarian.name = 'Andrei';
+favoriteLibrarian.assistCustomer('ClaraBridge');*/
+
+//Task 21
+//_________________________________________
+
+const favoriteLibrarian = new UniversityLibrarian();
+
+favoriteLibrarian.name = 'Andrei';
+favoriteLibrarian.assistCustomer('ClaraBridge');
+
+favoriteLibrarian.assistFaculty = () => console.log('!!!!!!!!');
+favoriteLibrarian.assistFaculty();
+try {
+  favoriteLibrarian.teachCommunity = () => console.log('???');
+}
+catch (err) {
+  console.log(err);
+}
+favoriteLibrarian.teachCommunity();
 
 // Dynamic Import Expressions
 //-----------------------------------
 
-import('./variables')
-    .then(m => console.log(m.a))
-    .catch(err => console.log('Catch error:', err));
+// import('./variables')
+//     .then(m => console.log(m.a))
+//     .catch(err => console.log('Catch error:', err));
 
 
 // Задание типа для функции
