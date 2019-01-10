@@ -2,7 +2,7 @@ import { Category } from "./enums";
 import { Book, Logger, Author, Librarian, Magazine } from "./interfaces";
 import { UniversityLibrarian, ReferenceItem } from "./classes";
 import RefBook from './encyclopedia';
-import { purge } from './lib/utility-functions';
+import {getBookByCategory, logCategorySearch, purge} from './lib/utility-functions';
 import Shelf from './shelf';
 
 /*
@@ -651,21 +651,34 @@ favoriteLibrarian.assistCustomer('ClaraBridge');*/
 //Task 21
 //_________________________________________
 
-const favoriteLibrarian = new UniversityLibrarian();
+// const favoriteLibrarian = new UniversityLibrarian();
+//
+// favoriteLibrarian.name = 'Andrei';
+// favoriteLibrarian.assistCustomer('ClaraBridge');
+//
+// favoriteLibrarian.assistFaculty = () => console.log('!!!!!!!!');
+// favoriteLibrarian.assistFaculty();
+// try {
+//   favoriteLibrarian.teachCommunity = () => console.log('???');
+// }
+// catch (err) {
+//   console.log(err);
+// }
+// favoriteLibrarian.teachCommunity();
 
-favoriteLibrarian.name = 'Andrei';
-favoriteLibrarian.assistCustomer('ClaraBridge');
 
-favoriteLibrarian.assistFaculty = () => console.log('!!!!!!!!');
-favoriteLibrarian.assistFaculty();
-try {
-  favoriteLibrarian.teachCommunity = () => console.log('???');
-}
-catch (err) {
-  console.log(err);
-}
-favoriteLibrarian.teachCommunity();
+//Task 22
+//_________________________________________
 
+console.log('Begin1...');
+// getBookByCategory(Category.JavaScript, logCategorySearch);
+getBookByCategory(Category.Software, logCategorySearch);
+console.log('End1...');
+
+console.log('Begin2...');
+getBookByCategory(Category.JavaScript, logCategorySearch);
+//getBookByCategory(Category.Software, logCategorySearch);
+console.log('End2...');
 // Dynamic Import Expressions
 //-----------------------------------
 
