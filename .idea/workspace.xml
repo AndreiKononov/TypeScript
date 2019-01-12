@@ -16,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="26">
@@ -24,6 +24,15 @@
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -120,17 +129,6 @@
               <item name="TypeScript" type="b2602c69:ProjectViewProjectNode" />
               <item name="TypeScript" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TypeScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TypeScript" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TypeScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TypeScript" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -181,15 +179,15 @@
       <workItem from="1546604003741" duration="7741000" />
       <workItem from="1546927740021" duration="16350000" />
       <workItem from="1547285231788" duration="1648000" />
-      <workItem from="1547286972202" duration="1042000" />
+      <workItem from="1547286972202" duration="1793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30212000" />
+    <option name="totallyTimeSpent" value="30986000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1298" height="752" extended-state="7" />
+    <frame x="-9" y="-9" width="1298" height="752" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1398881" />
@@ -200,7 +198,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.7455516" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4644128" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,6 +479,13 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
