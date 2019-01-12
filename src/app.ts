@@ -2,7 +2,7 @@ import { Category } from "./enums";
 import { Book, Logger, Author, Librarian, Magazine } from "./interfaces";
 import { UniversityLibrarian, ReferenceItem } from "./classes";
 import RefBook from './encyclopedia';
-import {getBookByCategory, logCategorySearch, purge} from './lib/utility-functions';
+import {getBookByCategory, getBookByCategoryPromise, logCategorySearch, purge} from './lib/utility-functions';
 import Shelf from './shelf';
 
 /*
@@ -666,10 +666,11 @@ favoriteLibrarian.assistCustomer('ClaraBridge');*/
 // }
 // favoriteLibrarian.teachCommunity();
 
-
-//Task 22
+//ASYNCHRONOUS PATTERNS
+//Task 22(callbacks)
 //_________________________________________
 
+/*
 console.log('Begin1...');
 // getBookByCategory(Category.JavaScript, logCategorySearch);
 getBookByCategory(Category.Software, logCategorySearch);
@@ -679,6 +680,32 @@ console.log('Begin2...');
 getBookByCategory(Category.JavaScript, logCategorySearch);
 //getBookByCategory(Category.Software, logCategorySearch);
 console.log('End2...');
+*/
+
+//Task 23(promises)
+//_________________________________________
+console.log('Begin1...');
+// getBookByCategory(Category.JavaScript, logCategorySearch);
+getBookByCategoryPromise(Category.JavaScript)
+  .then(titles => {
+    console.log(titles);
+    throw new Error('Error');
+    //return titles.length; //возвращаемое значение попадёт в слудующий then
+  })
+  .then(numberOfTitles => console.log(numberOfTitles))
+  .catch(error => console.log(error));
+console.log('End1...');
+
+console.log('Begin2...');
+getBookByCategoryPromise(Category.Software)
+  .then(titles => console.log(titles))
+  .catch(error => console.log(error));
+//getBookByCategory(Category.Software, logCategorySearch);
+console.log('End2...');
+
+
+
+
 // Dynamic Import Expressions
 //-----------------------------------
 

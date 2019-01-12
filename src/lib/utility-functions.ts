@@ -123,3 +123,18 @@ export function getBookByCategory(category: Category, callback: LibMgrCallback):
 export function logCategorySearch(error: Error, titles: string[]) {
   error ? console.log(`Error message: ${error.message}`) : console.log(titles);
 }
+
+export function getBookByCategoryPromise(category: Category): Promise<Array<string>> {
+  const p:Promise<string[]> = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const titles = getBookTitlesByCategory(category);
+        if (titles.length > 0) {
+            resolve(titles);
+        } else {
+          reject('No books found.');
+        }
+    }, 2000 )
+  });
+
+  return p;
+}
