@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="77204365-6e57-4ff1-801e-7927eb442f25" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utility-functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utility-functions.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -102,7 +100,7 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-247" />
     <option name="y" value="46" />
     <option name="width" value="1260" />
@@ -183,15 +181,15 @@
       <workItem from="1546604003741" duration="7741000" />
       <workItem from="1546927740021" duration="16350000" />
       <workItem from="1547285231788" duration="1648000" />
-      <workItem from="1547286972202" duration="461000" />
+      <workItem from="1547286972202" duration="1042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29780000" />
+    <option name="totallyTimeSpent" value="30212000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1298" height="752" extended-state="6" />
+    <frame x="-9" y="-9" width="1298" height="752" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1398881" />
