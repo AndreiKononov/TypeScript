@@ -21,8 +21,8 @@
       <file leaf-file-name="app.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="690" column="24" lean-forward="true" selection-start-line="690" selection-start-column="24" selection-end-line="690" selection-end-column="24" />
+            <state relative-caret-position="26">
+              <caret line="691" column="29" selection-start-line="691" selection-start-column="29" selection-end-line="691" selection-end-column="29" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -183,16 +183,15 @@
       <workItem from="1546604003741" duration="7741000" />
       <workItem from="1546927740021" duration="16350000" />
       <workItem from="1547285231788" duration="1648000" />
-      <workItem from="1547286972202" duration="216000" />
+      <workItem from="1547286972202" duration="461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29505000" />
+    <option name="totallyTimeSpent" value="29780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1298" height="752" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1398881" />
@@ -203,7 +202,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31494662" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.7455516" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -479,8 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="690" column="24" lean-forward="true" selection-start-line="690" selection-start-column="24" selection-end-line="690" selection-end-column="24" />
+        <state relative-caret-position="26">
+          <caret line="691" column="29" selection-start-line="691" selection-start-column="29" selection-end-line="691" selection-end-column="29" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
