@@ -138,3 +138,9 @@ export function getBookByCategoryPromise(category: Category): Promise<Array<stri
 
   return p;
 }
+
+export async function logSearchResults(category: Category) {
+    let foundBooks = await getBookByCategoryPromise(category);
+    console.log(foundBooks);
+    //return foundBooks;
+}

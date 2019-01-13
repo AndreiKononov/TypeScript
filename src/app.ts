@@ -2,7 +2,13 @@ import { Category } from "./enums";
 import { Book, Logger, Author, Librarian, Magazine } from "./interfaces";
 import { UniversityLibrarian, ReferenceItem } from "./classes";
 import RefBook from './encyclopedia';
-import {getBookByCategory, getBookByCategoryPromise, logCategorySearch, purge} from './lib/utility-functions';
+import {
+    getBookByCategory,
+    getBookByCategoryPromise,
+    logCategorySearch,
+    logSearchResults,
+    purge
+} from './lib/utility-functions';
 import Shelf from './shelf';
 
 /*
@@ -684,6 +690,8 @@ console.log('End2...');
 
 //Task 23(promises)
 //_________________________________________
+
+/*
 console.log('Begin1...');
 // getBookByCategory(Category.JavaScript, logCategorySearch);
 getBookByCategoryPromise(Category.JavaScript)
@@ -702,9 +710,15 @@ getBookByCategoryPromise(Category.Software)
   .catch(error => console.log(error));
 //getBookByCategory(Category.Software, logCategorySearch);
 console.log('End2...');
+*/
 
-
-
+//Task 24(asynchronous functions)
+//_________________________________________
+console.log('Beginning search...');
+logSearchResults(Category.JavaScript)
+ //.then(titles => console.log(titles))
+ .catch(reason => console.log(reason));
+console.log('Search submitted...');
 
 // Dynamic Import Expressions
 //-----------------------------------
